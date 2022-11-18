@@ -1,0 +1,127 @@
+.navigation .image {
+  display: flex;
+  justify-content: center;
+}
+.navigation .image hr {
+  background-color: #cdcbbc;
+  width: 350px;
+  margin-top: 40px;
+}
+
+.navigation .image img {
+  background-color: #ffffff;
+  width: 80px;
+  position: absolute;
+  padding: 0 15px;
+}
+.navigation .form {
+  margin-top: 55px;
+  text-align: center;
+}
+.navigation .form input[type="text"].input-name {
+  width: 250px;
+  padding: 7px;
+  border: 2px solid #777ac9;
+  border-radius: 5px;
+  outline: none;
+}
+.navigation .form span {
+  color: #999895;
+}
+.navigation .form .checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 280px;
+  margin-top: 10px;
+}
+.navigation .form .checkbox-container label {
+  color: #5e6086;
+  margin-left: 15px;
+  /* margin-bottom: 5px; */
+}
+.navigation .form .date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navigation .form .date .date-containter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 5px;
+}
+.navigation .form .date input[type="text"] {
+  width: 30px;
+  padding: 4px;
+  border: 2px solid #777ac3;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+}
+.navigation .form .date input[type="text"].input-year {
+  width: 60px;
+}
+
+.navigation .paginations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+.navigation .paginations button {
+  background: #cdcbbc;
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+.navigation .paginations button.button-active {
+  background-color: #000000;
+  width: 10px;
+  height: 10px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #ffffff;
+  margin: 0;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.12em solid currentColor;
+  border-radius: 0.15em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  background-color: #424572;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 500px) {
+  .navigation .image hr {
+    background-color: #cdcbbc;
+    width: 350px;
+    margin-top: 40px;
+  }
+  .navigation .form .checkbox-container {
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
